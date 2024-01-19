@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Popins', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #153677, #4e085f);
+}
+
+.container{
+    width: 40%;
+    min-height: 200px;
+    background: #fff;
+    margin: 100px auto 70px;
+    border-radius: 8px;
+}
+
+.ToDoList h1{
+    font-size: 23px;
+    font-weight: 800;
+    color: #002785;
+    display: flex;
+    padding: 20px 0px 8px 22px;
+}
+
+.ToDoList img{
+      height: 30px;
+      margin-left: 10px;
+}
+
+.inputForm{
+    width: 90%;
+    margin: 5px auto 5px;
+}
+
+.inputForm form{
+    display: flex;    
+    min-height: 50px;
+    border-radius: 40px;
+    background-color: #edeef0;
+}
+
+.inputForm form input{
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 20px;
+    background-color: transparent;
+    font-size: medium;
+    font-weight: 300;
+}
+
+.inputForm form button{
+    width: 120px;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    background-color: #ff5945;
+    color: #edeef0;
+    font-size: large;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ul{
+    margin-left: 26px;
+    padding: 0px 0px 20px 0px;
+}
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 15px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    background-image: url(/images/unchecked.png);
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 0px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(/images/checked.png);
+}
+
+span{
+    position: absolute;
+    color: #555;
+    height: 30px;
+    width: 30px;    
+    top: 10px;
+    right: 22px;
+    font-size: 28px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+span:hover{
+    background-color: #edeef0;
+}
